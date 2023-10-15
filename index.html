@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page-headings > h1 {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        h2 {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 2rem;
+            margin: 0 10 0 0;
+            padding: 0;
+        }
+        /*Flexbox container one*/
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .box {
+            display: flex;
+            background-color: cadetblue;
+            height: 100px;
+            width: 100px;
+            flex: 1;
+        }
+        .blueviolet {
+            background-color: blueviolet;
+            flex: 2;
+        }
+        .purple {
+            background-color: purple;
+            flex: 0.50;
+        }
+        /*Flexbox container two*/
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .hero-box {
+            background-color: blue;
+            height: 300px;
+            flex: 3;
+        }
+        .mini-hero {
+            background-color: cadetblue;
+            height: 300px;
+            flex: 1;
+        }
+        /*Flexbox container three*/
+        .container3 {
+            display: flex;
+            gap: 20px;
+        }
+        .smallbox {
+            background-color: cyan;
+            height: 100px;
+            flex: 1;
+        }
+
+        /*Section Two*/
+        .direction-container2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .box-0 {
+            display: flex;
+            background-color: cadetblue;
+            height: 100px;
+            width: 100px;
+            flex: 1;
+            margin-top: 10px;
+        }
+        .side2 {
+            background-color: blueviolet;
+            flex: 0.75;
+        }
+        .main {
+            background-color: blue;
+            width: auto;
+            height: 300px;
+        }
+        .section-2-container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .section-2-boxes {
+            display: flex;
+            background-color: blue;
+            height: 200px;
+            justify-content: space-between;
+        }
+        .section-3-container {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .mini-box {
+            display: flex;
+            background-color: cadetblue;
+            height: 100px;
+            /*try without max-width*/
+            min-width: 100px;
+            max-width: 100px;
+            flex: 1;
+            margin-top: 10px;
+        }
+        .section-3-flexible {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .mini-box0 {
+            display: flex;
+            background-color: blue;
+            height: 100px;
+            min-width: 100px;
+            flex: 1;
+            margin-top: 10px;
+        }
+        .section-3-flexible0 {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .mini-box1 {
+            display: flex;
+            background-color: cadetblue;
+            height: 100px;
+            min-width: 100px;
+            max-width: 100px;
+            flex: 1;
+            margin-top: 10px;
+        }
+        /*End of Style*/
+    </style>
+</head>
+<body>
+    <!--Section One-->
+    <div class="page-headings"><h1>Random Flexbox</h1></div>
+    <div class="container">
+        <div class="blueviolet box"></div>
+        <div class="cadetblue box"></div>
+        <div class="purple box"></div>
+    </div>
+
+    <div class="container2">
+        <div class="hero-box"></div>
+        <div class="mini-hero"></div>
+    </div>
+
+    <div class="container3">
+        <div class="smallbox"></div>
+        <div class="smallbox"></div>
+        <div class="smallbox"></div>
+        <div class="smallbox"></div>
+        <div class="smallbox"></div>
+        <div class="smallbox"></div>
+    </div>
+
+    <!--Section Two-->
+    <div class="page-headings"><h2>flex direction</h2></div>
+
+    <div class="direction-container">
+        <div class="main box-0"></div>
+    </div>
+    <div class="direction-container2">
+        <div class="side box-0"></div>
+        <div class="side2 box-0"></div>
+    </div>
+
+    <!--Section Three-->
+    <div class="page-headings"><h2>column</h2></div>
+    <div class="section-2-container">
+        <div class="section-2-boxes"></div>
+        <div class="section-2-boxes"></div>
+    </div>
+    <!--Section Three-->
+    <div class="page-headings"><h2>flex wrap</h2></div>
+    <div class="section-3-container">
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+    </div>
+
+    <div class="section-3-flexible">
+        <div class="mini-box0"></div>
+        <div class="mini-box0"></div>
+        <div class="mini-box0"></div>
+        <div class="mini-box0"></div>
+        <div class="mini-box0"></div>
+        <div class="mini-box0"></div>
+        <div class="mini-box0"></div>
+        <div class="mini-box0"></div>
+        <div class="mini-box0"></div>
+        <div class="mini-box0"></div>
+        <div class="mini-box0"></div>
+    </div>
+
+    <div class="section-3-flexible0">
+        <div class="mini-box1"></div>
+        <div class="mini-box1"></div>
+        <div class="mini-box1"></div>
+        <div class="mini-box1"></div>
+        <div class="mini-box1"></div>
+        <div class="mini-box1"></div>
+        <div class="mini-box1"></div>
+        <div class="mini-box1"></div>
+        <div class="mini-box1"></div>
+        <div class="mini-box1"></div>
+        <div class="mini-box1"></div>
+    </div>
+</body>
+</html>
